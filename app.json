@@ -1,0 +1,13 @@
+{
+  "name": "irkit-api-server",
+  "env": {
+    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-multi.git",
+    "IRKIT_DATA_FILE": {
+      "description": "URL of your irkit.json. Private gist's raw URL is nice."
+    },
+    "SECRET_TOKEN": {
+      "description": "A secret token used in the routing like: /SECRET_TOKEN/path.",
+      "generator": "secret"
+    }
+  }
+}
