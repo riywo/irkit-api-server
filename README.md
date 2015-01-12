@@ -9,8 +9,9 @@ Before deploy to heroku, you must finish creating your `irkit.json` using `ruby-
 
 ````
 $ gem install irkit
-$ irkit --get foo
-$ irkit --get bar
+$ irkit --get tv_on
+$ irkit --get tv_off
+$ irkit --get airconditioner_off
 $ irkit --device:add living
 $ ls ~/.irkit.json
 /Users/riywo/.irkit.json
@@ -19,7 +20,7 @@ $ ls ~/.irkit.json
 See also: https://github.com/shokai/ruby-irkit
 
 ### Upload irkit.json somewhere else
-Then, upload the `.irkit.json` content to a web server publicly accessible. This contains some private infomation such as clientkey or deviceid, so private gist is a nice place to put it on. You will get a URL of raw file like `https://gist.githubusercontent.com/riywo/.../raw/.../irkit.json`.
+Then, upload the `.irkit.json` content to a web server publicly accessible. This contains some private infomation such as clientkey or deviceid, so private gist is a nice place to put it on. You will get a URL of raw file like `https://gist.githubusercontent.com/riywo/.../raw/.../irkit.json`. Or you can use Dropbox shared link.
 
 ### Deploy and enjoy it!
 Now you can deploy via Heroku deploy button. You have to set `IRKIT_DATA_FILE` as the URL you got above.
